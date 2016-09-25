@@ -1,0 +1,82 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #2d3c49;
+	font-weight:300;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: #7d97ad; /* old IE */
+    background-color: #7d97ad; /* Modern Browsers */
+}
+
+/*
+ * Headline
+ */
+
+.header-row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.box-25 {
+	width: 25%;
+}
+
+.box-75 {
+	width: 75%;
+}
+
+/*
+ * Logo
+ */
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.svg-box {
+	height: 142px;
+	width: 100px;
+}
+
+/*
+ * Text Styles
+ */
+
+.text-muted {
+	color: #7d97ad;	
+}
+
+.text-thin {
+	font-weight: 100;	
+}
+
+.title-super {
+	font-size: 60px;
+}
+
+/*
+ * Media queries
+ * First - when screen is below 992 px center the images
+ * second - when screen is below 350 px shrink the udacity logo
+ */
+
+@media screen and (max-width:992px) {
+.img-responsive {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+
+@media screen and (max-width:351px) {
+.svg-box {
+	height: 100px;
+}
+
+}
